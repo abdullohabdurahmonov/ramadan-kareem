@@ -1,0 +1,187 @@
+/* style.css
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto',sans-serif;
+}
+.contant{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(20, 20, 20, 0.7),rgba(20, 20, 20, 0.7)),url(360_F_489372447_5niHtl1GUPhOsDDcAxBAQ3xTFkQnNix1.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+    
+}
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 80px;
+	cursor: pointer;
+}
+.menu-icon{
+	width: 30px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 50px;
+}
+nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-size: 15px;
+}
+.row{
+	display: flex;
+	height: 80%;
+	align-items: center;
+}
+.col{
+	flex-basis: 50%;
+}
+h1{
+	color: #fff;
+	font-size: 100px;
+
+}
+p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+}
+button{
+	width: 100px;
+	color: #000;
+	font-size: 15px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top:30px;
+}
+.card{
+	width: 200px;
+	height: 270px;
+	display: inline-block;
+	border-radius: 10px;
+	padding:10px 15px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover; 
+	transition: transform 0.5s;
+}
+.card1{
+background-image: url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);	
+}
+.card2{
+background-image: url(istockphoto-1146718430-170667a.jpg);	
+}
+.card:hover{
+	transform: translateY(-10px);
+}
+h2{
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+	
+}
+.card p{
+	text-shadow: 5px 5px 5px #000;
+	font-size: 15px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contant {
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.7),
+      rgba(20, 20, 20, 0.309)
+    ),
+    url(360_F_489372447_5niHtl1GUPhOsDDcAxBAQ3xTFkQnNix1.jpg);
+  height: 100vh;
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  margin: 0 30px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.nav-items {
+  display: flex;
+  gap: 30px;
+}
+.item {
+  color: azure;
+  transition: color 0.3s;
+  font-family: sans-serif;
+}
+.item:hover {
+  color: rgba(41, 39, 39, 0.795);
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.sahar {
+  width: 120px;
+  height: 110px;
+  background-image: url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);
+  border-radius: 10px;
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform .3s;
+}
+.iftar:hover{
+    transform: scale(1.1);
+}
+.iftar {
+  width: 120px;
+  height: 110px;
+  background-image: url(images.jpg);
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform .3s;
+
+}
+.sahar:hover{
+    transform: scale(1.1);
+}
