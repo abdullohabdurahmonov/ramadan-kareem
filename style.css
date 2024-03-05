@@ -159,7 +159,10 @@ a {
 .sahar {
   width: 170px;
   height: 110px;
-  background-image: url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.7),
+      rgba(20, 20, 20, 0.309)
+    ), url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);
   border-radius: 10px;
   background-position:left;
   background-repeat: no-repeat;
@@ -173,7 +176,10 @@ a {
 .iftar {
   width: 170px;
   height: 110px;
-  background-image: url(images.jpg);
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.7),
+      rgba(20, 20, 20, 0.309)
+    ), url(images.jpg);
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
