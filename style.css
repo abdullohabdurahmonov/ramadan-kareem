@@ -151,7 +151,7 @@ a {
 .hero {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 20px;
   background-color: rgb(6, 129, 6);
   padding-bottom: 20px;
