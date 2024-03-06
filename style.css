@@ -115,11 +115,7 @@ h2{
 }
 .contant {
   width: 100%;
-  background-image: linear-gradient(
-      rgba(20, 20, 20, 0.7),
-      rgba(20, 20, 20, 0.309)
-    ),
-    url(360_F_489372447_5niHtl1GUPhOsDDcAxBAQ3xTFkQnNix1.jpg);
+  
   height: 100vh;
   background-position: unset;
   background-repeat: no-repeat;
@@ -127,13 +123,15 @@ h2{
   position: relative;
 }
 .container {
-  margin: 0 30px;
+  /* margin: 0 30px; */
 }
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  
   align-items: center;
+  background-color: rgb(4, 90, 13);
+
 }
 a {
   text-decoration: none;
@@ -154,15 +152,18 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 20px;
+  background-color: rgb(6, 129, 6);
+  padding-bottom: 20px;
 }
 .sahar {
   width: 170px;
   height: 110px;
   background-image: linear-gradient(
-      rgba(20, 20, 20, 0.7),
-      rgba(20, 20, 20, 0.309)
-    ), url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);
+    rgba(20, 20, 20, 0.7),
+    rgba(20, 20, 20, 0.309)
+  ), url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);
+  
   border-radius: 10px;
   background-position:left;
   background-repeat: no-repeat;
@@ -177,9 +178,9 @@ a {
   width: 170px;
   height: 110px;
   background-image: linear-gradient(
-      rgba(20, 20, 20, 0.7),
-      rgba(20, 20, 20, 0.309)
-    ), url(images.jpg);
+    rgba(20, 20, 20, 0.7),
+    rgba(20, 20, 20, 0.309)
+  ), url(images.jpg);
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
