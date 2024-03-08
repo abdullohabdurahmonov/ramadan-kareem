@@ -1,3 +1,10 @@
+.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 24
+  }
 /* style.css
 *{
 	margin: 0;
@@ -113,6 +120,9 @@ h2{
   padding: 0;
   box-sizing: border-box;
 }
+body{
+	background-color: rgb(207, 239, 245);
+}
 .contant {
   width: 100%;
   
@@ -122,8 +132,10 @@ h2{
   background-size: cover;
   position: relative;
 }
-.container {
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   /* margin: 0 30px; */
+  padding-right: 0px; 
+  padding-left: 0px;
 }
 .navbar {
   display: flex;
@@ -191,4 +203,19 @@ a {
 }
 .sahar:hover{
     transform: scale(1.1);
+}
+.btn{
+	background-color:;
+}
+.corpus{
+	padding: 3px 5px;
+	border: 1px solid rgb(255,215,0);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.corp{
+	padding: 0.8px 12px;
+	background-color: rgb(255,215,0);
 }
