@@ -1,10 +1,6 @@
 .material-symbols-outlined {
-	font-variation-settings:
-	'FILL' 0,
-	'wght' 400,
-	'GRAD' 0,
-	'opsz' 24
-  }
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
 /* style.css
 *{
 	margin: 0;
@@ -120,30 +116,35 @@ h2{
   padding: 0;
   box-sizing: border-box;
 }
-body{
-	background-color: rgb(207, 239, 245);
+body {
+  background-color: rgb(169, 224, 234);
 }
 .contant {
   width: 100%;
-  
+
   height: 100vh;
   background-position: unset;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   /* margin: 0 30px; */
-  padding-right: 0px; 
+  padding-right: 0px;
   padding-left: 0px;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
-  
+
   align-items: center;
   background-color: rgb(4, 90, 13);
-
 }
 a {
   text-decoration: none;
@@ -172,51 +173,105 @@ a {
   width: 170px;
   height: 110px;
   background-image: linear-gradient(
-    rgba(20, 20, 20, 0.7),
-    rgba(20, 20, 20, 0.309)
-  ), url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);
-  
+      rgba(20, 20, 20, 0.7),
+      rgba(20, 20, 20, 0.309)
+    ),
+    url(ramadan-sehri-mubarak2_642b25fadd48f.jpg);
+
   border-radius: 10px;
-  background-position:left;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
-.iftar:hover{
-    transform: scale(1.1);
+.iftar:hover {
+  transform: scale(1.1);
 }
 .iftar {
   width: 170px;
   height: 110px;
   background-image: linear-gradient(
-    rgba(20, 20, 20, 0.7),
-    rgba(20, 20, 20, 0.309)
-  ), url(images.jpg);
+      rgba(20, 20, 20, 0.7),
+      rgba(20, 20, 20, 0.309)
+    ),
+    url(images.jpg);
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  transition: transform .3s;
+  transition: transform 0.3s;
+}
+.sahar:hover {
+  transform: scale(1.1);
+}
+.btn {
+  background-color: ;
+}
+.corpus {
+  padding: 5px 5px;
+  border: 1px solid rgb(255, 215, 0);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.corp {
+  padding: 2px 15px;
+  background-color: rgb(255, 215, 0);
+  border-radius: 3px;
+}
+.taqweem {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.taqweem-title {
+  text-align: center;
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: larger;
+  color: rgb(6, 129, 6);
 
 }
-.sahar:hover{
-    transform: scale(1.1);
+.moment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(164, 222, 240, 0.77);
+  border-radius: 5px;
+  background-color: rgba(164, 222, 240, 0.59);
+  width: 70%;
+  justify-content: space-evenly;
 }
-.btn{
-	background-color:;
+.moments {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  padding: 0 30px;
+  margin-top: 13px;
 }
-.corpus{
-	padding: 5px 5px;
-	border: 1px solid rgb(255,215,0);
-	border-radius: 5px;
-	display: flex;
-	flex-direction: column;
-	
+.mo {
+	width: 30%;
+  align-items: center;
+  text-align: center;
+  color: rgb(6, 129, 6);
+
 }
-.corp{
-	padding: 2px 15px;
-	background-color: rgb(255,215,0);
-	border-radius: 3px;
+.time {
+	width: 30%;
+
+  align-items: center;
+  text-align: center;
+  color: rgb(6, 129, 6);
+
+}
+.timer {
+	width: 30%;
+	color: rgb(6, 129, 6);
+
+  align-items: center;
+  text-align: center;
 }
