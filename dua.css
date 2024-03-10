@@ -5,9 +5,11 @@
 }
 body {
   background-image: url(./459a8f8d1a04316ea1a0066e3b053b28.jpg);
-  height:800px;
   background-position: top;
-  background-size: 100%;
+  background-size:inherit;
+  background-position: cover;
+  background-repeat: no-repeat;
+  
 }
 .contant {
   display: flex;
