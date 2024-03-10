@@ -55,10 +55,10 @@
                     </div>
                     <div class="sahar-time"
                         style="font-weight: 600;line-height: 25px;padding-left: 7px;text-shadow: 2px 2px 5px rgb(111, 109, 109);;color: rgb(255,215,0);">
-                        04:45</div>
-                    <div class="sahar-timer"
+                        05:23</div>
+                    <div id="timer" class="sahar-timer"
                         style="font-weight:600;line-height: 25px;padding-left: 7px;text-shadow: 2px 2px 5px rgb(111, 109, 109);;color: rgb(255,215,0);">
-                        00:13:15</div>
+                        </div>
                 </div>
                 <a href="./dua.html" class="iftar" style="text-decoration: none;">
                     <div class="iftar-title"
@@ -69,10 +69,10 @@
                     </div>
                     <div class="iftar-time"
                         style="font-weight: 600;line-height: 25px;padding-left: 7px;text-shadow: 2px 2px 5px rgb(111, 109, 109);;color: rgb(255,215,0);">
-                        19:45</div>
-                    <div class="iftar-timer"
+                        18:27</div>
+                    <div id="timer2" class="iftar-timer"
                         style="font-weight: 600;line-height: 25px;padding-left: 7px;text-shadow: 2px 2px 5px rgb(111, 109, 109);;color: rgb(255,215,0);">
-                        15:13:45</div>
+                        </div>
                 </a>
             </div>
         </div>
@@ -115,33 +115,33 @@
             <div class="moments">
                 <div class="moment">
                     <div class="mo">Tong</div>
-                    <div class="time">05:28</div>
-                    <div class="timer">00:13:15</div>
+                    <div class="time">05:23</div>
+                    <div class="timer"id="tong"></div>
                 </div>
                 <div class="moment">
                     <div class="mo">Quyosh</div>
-                    <div class="time">06:46</div>
-                    <div class="timer">00:13:15</div>
+                    <div class="time">06:41</div>
+                    <div class="timer" id="quyosh" ></div>
                 </div>
                 <div class="moment">
                     <div class="mo">Peshin</div>
                     <div class="time">12:38</div>
-                    <div class="timer">00:13:15</div>
+                    <div class="timer" id="peshin" ></div>
                 </div>
                 <div class="moment">
                     <div class="mo">Asr</div>
-                    <div class="time">16:37</div>
-                    <div class="timer">00:13:15</div>
+                    <div class="time">16:39</div>
+                    <div class="timer" id="asr" ></div>
                 </div>
                 <div class="moment">
                     <div class="mo">Shom</div>
-                    <div class="time">18:24</div>
-                    <div class="timer">00:13:15</div>
+                    <div class="time">18:27</div>
+                    <div class="timer" id="shom" ></div>
                 </div>
                 <div class="moment">
                     <div class="mo">Xufton</div>
-                    <div class="time">19:38</div>
-                    <div class="timer">00:13:15</div>
+                    <div class="time">19:41</div>
+                    <div class="timer" id="xufton" ></div>
                 </div>
             </div>
         </div>
@@ -152,5 +152,225 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 11, 2024 05:23:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("timer").innerHTML = hours + ":"
+      + minutes + ":" + seconds ;
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "Tugadi";
+      }
+    }, 1000);
+    // Set the date we're counting down to
+    var countDownDate2 = new Date("March 11, 2024 18:27:00").getTime();
+    
+    // Update the count down every 1 second
+    var y = setInterval(function() {
+    
+      // Get today's date and time
+      var now2 = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance2 = countDownDate2 - now2;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+      var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("timer2").innerHTML = hours2 + ":"
+      + minutes2 + ":" + seconds2 ;
+    
+      // If the count down is finished, write some text
+      if (distance2 < 0) {
+        clearInterval(y);
+        document.getElementById("timer2").innerHTML = "Tugadi";
+      }
+    }, 1000);
+
+    // Set the date we're counting down to
+    var countDownDatetong = new Date("March 11, 2024 05:23:00").getTime();
+    
+    // Update the count down every 1 second
+    var xtong = setInterval(function() {
+    
+      // Get today's date and time
+      var nowtong = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distancetong = countDownDatetong - nowtong;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var hourstong = Math.floor((distancetong % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutestong = Math.floor((distancetong % (1000 * 60 * 60)) / (1000 * 60));
+      var secondstong = Math.floor((distancetong % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("tong").innerHTML = hourstong + ":"
+      + minutestong + ":" + secondstong ;
+    
+      // If the count down is finished, write some text
+      if (distancetong < 0) {
+        clearInterval(xtong);
+        document.getElementById("tong").innerHTML = "Tugadi";
+      }
+    }, 1000);
+    // Set the date we're counting down to
+    var countDownDatequyosh = new Date("March 11, 2024 06:41:00").getTime();
+    
+    // Update the count down every 1 second
+    var xquyosh = setInterval(function() {
+    
+      // Get today's date and time
+      var nowquyosh = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distancequyosh = countDownDatequyosh - nowquyosh;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var hoursquyosh = Math.floor((distancequyosh % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutesquyosh = Math.floor((distancequyosh % (1000 * 60 * 60)) / (1000 * 60));
+      var secondsquyosh = Math.floor((distancequyosh % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("quyosh").innerHTML = hoursquyosh + ":"
+      + minutesquyosh + ":" + secondsquyosh ;
+    
+      // If the count down is finished, write some text
+      if (distancetong < 0) {
+        clearInterval(xquyosh);
+        document.getElementById("quyosh").innerHTML = "Tugadi";
+      }
+    }, 1000);
+     // Set the date we're counting down to
+     var countDownDatepeshin = new Date("March 11, 2024 12:38:00").getTime();
+    
+    // Update the count down every 1 second
+    var xpeshin = setInterval(function() {
+    
+      // Get today's date and time
+      var nowpeshin = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distancepeshin = countDownDatepeshin - nowpeshin;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var hourspeshin = Math.floor((distancepeshin % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutespeshin = Math.floor((distancepeshin % (1000 * 60 * 60)) / (1000 * 60));
+      var secondspeshin = Math.floor((distancepeshin % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("peshin").innerHTML = hourspeshin + ":"
+      + minutespeshin + ":" + secondspeshin ;
+    
+      // If the count down is finished, write some text
+      if (distancepeshin < 0) {
+        clearInterval(xpeshin);
+        document.getElementById("peshin").innerHTML = "Tugadi";
+      }
+    }, 1000);
+    // Set the date we're counting down to
+    var countDownDateasr = new Date("March 11, 2024 16:39:00").getTime();
+    
+    // Update the count down every 1 second
+    var xasr = setInterval(function() {
+    
+      // Get today's date and time
+      var nowasr = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distanceasr = countDownDateasr - nowasr;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var hoursasr = Math.floor((distanceasr % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutesasr = Math.floor((distanceasr % (1000 * 60 * 60)) / (1000 * 60));
+      var secondsasr = Math.floor((distanceasr % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("asr").innerHTML = hoursasr + ":"
+      + minutesasr + ":" + secondsasr ;
+    
+      // If the count down is finished, write some text
+      if (distanceasr < 0) {
+        clearInterval(xasr);
+        document.getElementById("asr").innerHTML = "Tugadi";
+      }
+    }, 1000);
+    // Set the date we're counting down to
+    var countDownDateshom = new Date("March 11, 2024 18:27:00").getTime();
+    
+    // Update the count down every 1 second
+    var xshom = setInterval(function() {
+    
+      // Get today's date and time
+      var nowshom = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distanceshom = countDownDateshom - nowshom;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var hoursshom = Math.floor((distanceshom % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutesshom = Math.floor((distanceshom % (1000 * 60 * 60)) / (1000 * 60));
+      var secondsshom = Math.floor((distanceshom % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("shom").innerHTML = hoursshom + ":"
+      + minutesshom + ":" + secondsshom ;
+    
+      // If the count down is finished, write some text
+      if (distanceshom < 0) {
+        clearInterval(xshom);
+        document.getElementById("shom").innerHTML = "Tugadi";
+      }
+    }, 1000);
+    // Set the date we're counting down to
+    var countDownDatexufton = new Date("March 11, 2024 19:41:00").getTime();
+    
+    // Update the count down every 1 second
+    var xxufton = setInterval(function() {
+    
+      // Get today's date and time
+      var nowxufton = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distancexufton = countDownDatexufton - nowxufton;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var hoursxufton = Math.floor((distancexufton % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutesxufton = Math.floor((distancexufton % (1000 * 60 * 60)) / (1000 * 60));
+      var secondsxufton = Math.floor((distancexufton % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("xufton").innerHTML = hoursxufton + ":"
+      + minutesxufton + ":" + secondsxufton ;
+    
+      // If the count down is finished, write some text
+      if (distancexufton < 0) {
+        clearInterval(xxufton);
+        document.getElementById("xufton").innerHTML = "Tugadi";
+      }
+    }, 1000);
+    </script>
 
 </html>
