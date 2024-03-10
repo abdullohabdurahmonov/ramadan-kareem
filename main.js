@@ -26,8 +26,8 @@ const months = [
 
 
 
-date.innerHTML = `${today}${months[month]}.${year}`
-date2.innerHTML = `${today}${months[month]}.${year}`
+date.innerHTML = `${today}-${months[month]}.${year}`
+date2.innerHTML = `${today}-${months[month]}.${year}`
 
 
 
